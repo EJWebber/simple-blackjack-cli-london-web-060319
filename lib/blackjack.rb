@@ -32,9 +32,9 @@ def hit?(current_total)
 prompt_user
 input = get_user_input
 until input == 'h'||input == 's'
-invalid_command
-prompt_user
-input = get_user_input
+  invalid_command
+  prompt_user
+  input = get_user_input
 end
 if input == 'h'
   current_total += deal_card

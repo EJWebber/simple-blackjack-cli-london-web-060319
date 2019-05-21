@@ -28,7 +28,7 @@ def initial_round
   return (card_total)
 end
 
-def hit?(current_total)
+def hit?(card_total)
 prompt_user
 input = get_user_input
 until input == 'h'||input == 's'
@@ -37,9 +37,9 @@ until input == 'h'||input == 's'
   input = get_user_input
 end
 if input == 'h'
-  current_total += deal_card
+  card_total += deal_card
 elsif input == 's'
-  current_total
+  card_total
 end
 
 def invalid_command

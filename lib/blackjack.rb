@@ -34,7 +34,7 @@ input = get_user_input
 if input == 'h'
   current_total += deal_card
 elsif input == 's'
-  
+  current_total
 end
 
 def invalid_command
